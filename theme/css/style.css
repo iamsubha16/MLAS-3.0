@@ -967,20 +967,19 @@ footer .overlay-image {
   width: 50%;
 }
 .gmap .right{
-  padding: 1rem 4rem;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
-.gmap .right h2{
-  margin-bottom: 3rem;
+.gmap .right .content-box h2{
+  margin-bottom: 2.5rem;
 }
-.gmap .right .lead {
+.gmap .right .content-box .lead {
   line-height: 10px;
 }
-.gmap .right .head {
+.gmap .right .content-box .head {
   font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
