@@ -6,6 +6,13 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #6c6c86;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 p {
@@ -134,8 +141,8 @@ h6,
 .btn-primary {
   background: linear-gradient(
     37deg,
-    rgb(180, 62, 121) 1%,
-    rgb(247, 70, 58) 100%
+    #756AB6 1%,
+    #C21292 100%
   );
   color: #fff;
   border: 0;
@@ -235,12 +242,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #f9746b;
+  background: #A367B1;
   color: #fff;
 }
 
 ::selection {
-  background: #f9746b;
+  background: #A367B1;
   color: #fff;
 }
 
@@ -321,8 +328,8 @@ a:hover {
   width: 220px;
   background: linear-gradient(
     37deg,
-    rgb(180, 62, 121) 1%,
-    rgb(247, 70, 58) 100%
+    #756AB6 1%,
+    #C21292 100%
   );
   border-radius: 5px;
   margin: 40px auto 90px;
@@ -381,7 +388,7 @@ a:hover {
   width: 100%;
   top: 0;
   left: 0;
-  background: #07085d;
+  background: #5D3587;
   opacity: 0.8;
 }
 .overlay-secondary-half {
@@ -417,7 +424,7 @@ a:hover {
 }
 
 .bg-secondary {
-  background: #07085d !important;
+  background: #392467 !important;
 }
 
 .text-primary {
@@ -513,8 +520,8 @@ a:hover {
 .bg-gradient-primary {
   background: linear-gradient(
     37deg,
-    rgb(180, 62, 121) 1%,
-    rgb(247, 70, 58) 100%
+    #A367B1 1%,
+    #392467 100%
   ) !important;
 }
 
@@ -587,7 +594,7 @@ textarea.form-control {
   transition: 0.3s ease;
 }
 .navigation.nav-bg {
-  background-color: #07085d;
+  background-color: #392467;
   padding: 15px 100px;
 }
 @media (max-width: 991px) {
@@ -598,7 +605,7 @@ textarea.form-control {
 @media (max-width: 991px) {
   .navigation {
     padding: 20px;
-    background: #07085d;
+    background: #392467;
   }
 }
 
@@ -657,13 +664,13 @@ textarea.form-control {
   transition: inherit;
 }
 .hover-bg-secondary:hover {
-  background: #07085d;
+  background: #392467;
 }
 .hover-bg-secondary:hover * {
   color: #fff;
 }
 .hover-bg-secondary.active {
-  background: #07085d;
+  background: #392467;
 }
 .hover-bg-secondary.active * {
   color: #fff;
@@ -770,7 +777,7 @@ textarea.form-control {
   background: linear-gradient(
     37deg,
     rgb(180, 62, 121) 1%,
-    rgb(247, 70, 58) 100%
+    #FFD1E3 100%
   );
   left: 0;
   top: 60%;
@@ -784,8 +791,8 @@ textarea.form-control {
   transform: rotate(40deg);
   background: linear-gradient(
     37deg,
-    rgb(180, 62, 121) 1%,
-    rgb(247, 70, 58) 100%
+    #FFD1E3 1%,
+    #392467 100%
   );
   left: 20%;
   top: 55%;
@@ -1016,6 +1023,14 @@ footer .overlay-image {
 .card-footer {
   border: 0;
 }
+.venue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 .gmap {
   display: flex;
   flex-direction: row;
@@ -1041,6 +1056,10 @@ footer .overlay-image {
 }
 .gmap .right .content-box .head {
   font-weight: 700;
+}
+
+#accordion .card-header a:hover{
+  color: #A367B1 !important;
 }
 
 /* Custom CSS */
