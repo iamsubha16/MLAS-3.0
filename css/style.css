@@ -1037,6 +1037,18 @@ footer .overlay-image {
 .gmap .right .content-box .head {
   font-weight: 700;
 }
+@media (max-width: 991px) {
+  .gmap{
+    flex-direction: column;
+  }
+  .gmap .right{
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+  .gmap .left{
+    width: 100%;
+  }
+}
 
 #accordion .card-header a:hover {
   color: #A367B1 !important;
@@ -1137,3 +1149,4 @@ footer .overlay-image {
   background: #102f58;
   /* letter-spacing: 2px; */
 }
+
