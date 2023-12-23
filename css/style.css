@@ -139,11 +139,7 @@ h6,
 }
 
 .btn-primary {
-  background: linear-gradient(
-    37deg,
-    #756AB6 1%,
-    #C21292 100%
-  );
+  background: linear-gradient(37deg, #756ab6 1%, #c21292 100%);
   color: #fff;
   border: 0;
 }
@@ -242,12 +238,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #A367B1;
+  background: #a367b1;
   color: #fff;
 }
 
 ::selection {
-  background: #A367B1;
+  background: #a367b1;
   color: #fff;
 }
 
@@ -326,11 +322,7 @@ a:hover {
 .section-border {
   height: 9px;
   width: 220px;
-  background: linear-gradient(
-    37deg,
-    #756AB6 1%,
-    #C21292 100%
-  );
+  background: linear-gradient(37deg, #756ab6 1%, #c21292 100%);
   border-radius: 5px;
   margin: 40px auto 90px;
 }
@@ -388,7 +380,7 @@ a:hover {
   width: 100%;
   top: 0;
   left: 0;
-  background: #5D3587;
+  background: #5d3587;
   opacity: 0.8;
 }
 .overlay-secondary-half {
@@ -518,11 +510,7 @@ a:hover {
 }
 
 .bg-gradient-primary {
-  background: linear-gradient(
-    37deg,
-    #A367B1 1%,
-    #392467 100%
-  ) !important;
+  background: linear-gradient(37deg, #a367b1 1%, #392467 100%) !important;
 }
 
 .transition {
@@ -774,11 +762,7 @@ textarea.form-control {
   height: 100%;
   width: 100%;
   transform: rotate(40deg);
-  background: linear-gradient(
-    37deg,
-    rgb(180, 62, 121) 1%,
-    #FFD1E3 100%
-  );
+  background: linear-gradient(37deg, rgb(180, 62, 121) 1%, #ffd1e3 100%);
   left: 0;
   top: 60%;
   opacity: 0.5;
@@ -789,11 +773,7 @@ textarea.form-control {
   height: 100%;
   width: 100%;
   transform: rotate(40deg);
-  background: linear-gradient(
-    37deg,
-    #FFD1E3 1%,
-    #392467 100%
-  );
+  background: linear-gradient(37deg, #ffd1e3 1%, #392467 100%);
   left: 20%;
   top: 55%;
 }
@@ -1048,7 +1028,7 @@ footer .overlay-image {
   justify-content: center;
   align-items: center;
 }
-.gmap .right .content-box h2{
+.gmap .right .content-box h2 {
   margin-bottom: 2.5rem;
 }
 .gmap .right .content-box .lead {
@@ -1058,7 +1038,7 @@ footer .overlay-image {
   font-weight: 700;
 }
 
-#accordion .card-header a:hover{
+#accordion .card-header a:hover {
   color: #A367B1 !important;
 }
 
@@ -1075,4 +1055,85 @@ footer .overlay-image {
   bottom: 4px;
 }
 
-/* Custom CSS */
+.list-inline-item{
+  position: relative;
+  background-color: #7E30E1;
+  border-radius: 999px;
+  bottom: 0px;
+  transition-property: background, bottom;
+  transition-duration: 500ms;
+}
+.list-inline-item:hover{
+  background-color: #451952;
+  bottom: 4px;
+}
+
+/* Custom Form CSS  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.form-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+  justify-content: space-evenly;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 770px) {
+  .col-md-6 {
+    width: 100%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-4 {
+    width: 100%;
+  }
+}
+
+.home_bg {
+  background: rgba(0, 0, 0, 0.3) url(../images/5605216.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-blend-mode: darken;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* position: sticky; */
+  z-index: 1;
+  /* padding: 60px 0 40px 0; */
+}
+@media (max-width: 770px) {
+  .form_heading svg text {
+    font-size: 1rem;
+  }
+}
+.btn {
+  border-color: #114a96;
+  background-color: #114a96;
+  transition: 0.3s all linear;
+}
+.btn:hover {
+  background: #102f58;
+  /* letter-spacing: 2px; */
+}
