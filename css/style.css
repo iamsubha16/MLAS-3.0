@@ -1080,6 +1080,27 @@ footer .overlay-image {
   bottom: 4px;
 }
 
+.speaker-card{
+  position: relative;
+  overflow: hidden;
+}
+
+.speaker-socials{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background-color: #000;
+  border-bottom-right-radius: 4px;
+  height: 3rem;
+  top: -3rem;
+  transition: all;
+  transition-duration: 350ms;
+}
+
+.speaker-card:hover > .speaker-socials {
+  top: 0rem;
+}
+
 /* Custom Form CSS  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .card {
