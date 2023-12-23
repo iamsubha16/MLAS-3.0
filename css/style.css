@@ -1062,4 +1062,17 @@ footer .overlay-image {
   color: #A367B1 !important;
 }
 
+.list-inline-item{
+  position: relative;
+  background-color: #7E30E1;
+  border-radius: 999px;
+  bottom: 0px;
+  transition-property: background, bottom;
+  transition-duration: 500ms;
+}
+.list-inline-item:hover{
+  background-color: #451952;
+  bottom: 4px;
+}
+
 /* Custom CSS */
