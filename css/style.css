@@ -1,5 +1,8 @@
 /*  typography */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Poppins:300,400,500,600,700&display=swap");
+html{
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1.2;
   font-family: "Poppins", sans-serif;
