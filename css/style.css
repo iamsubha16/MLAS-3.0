@@ -1,6 +1,6 @@
 /*  typography */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Poppins:300,400,500,600,700&display=swap");
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -116,6 +116,18 @@ h6,
 }
 
 /* Button style */
+.box-btn {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  padding: 13px 25px;
+  font-weight: 600;
+  border: 1px solid;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s ease;
+  scale: 1.75;
+}
 .btn {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -128,6 +140,15 @@ h6,
   z-index: 1;
   transition: 0.2s ease;
 }
+
+.box-btn:hover,
+.box-btn:active,
+.box-btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+  box-shadow: 0px 18px 18px 0px rgba(20, 28, 91, 0.19);
+}
+
 .btn:hover,
 .btn:active,
 .btn:focus {
@@ -590,12 +611,16 @@ textarea.form-control {
 }
 @media (max-width: 991px) {
   .navigation.nav-bg {
-    padding: 15px 20px;
+    padding: 15px 10px;
+  }
+
+  .navbar-brand img {
+    width: 275px;
   }
 }
 @media (max-width: 991px) {
   .navigation {
-    padding: 20px;
+    padding: 10px;
     background: #392467;
   }
 }
@@ -1041,54 +1066,54 @@ footer .overlay-image {
   font-weight: 700;
 }
 @media (max-width: 991px) {
-  .gmap{
+  .gmap {
     flex-direction: column;
   }
-  .gmap .right{
+  .gmap .right {
     width: 100%;
     padding: 1rem 1rem;
   }
-  .gmap .left{
+  .gmap .left {
     width: 100%;
   }
 }
 
 #accordion .card-header a:hover {
-  color: #A367B1 !important;
+  color: #a367b1 !important;
 }
 
-.list-inline-item{
+.list-inline-item {
   position: relative;
-  background-color: #7E30E1;
+  background-color: #7e30e1;
   border-radius: 999px;
   bottom: 0px;
   transition-property: background, bottom;
   transition-duration: 500ms;
 }
-.list-inline-item:hover{
+.list-inline-item:hover {
   background-color: #451952;
   bottom: 4px;
 }
 
-.list-inline-item{
+.list-inline-item {
   position: relative;
-  background-color: #7E30E1;
+  background-color: #7e30e1;
   border-radius: 999px;
   bottom: 0px;
   transition-property: background, bottom;
   transition-duration: 500ms;
 }
-.list-inline-item:hover{
+.list-inline-item:hover {
   background-color: #451952;
   bottom: 4px;
 }
 
-.speaker-card{
+.speaker-card {
   position: relative;
   overflow: hidden;
 }
 
-.speaker-socials{
+.speaker-socials {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -1166,11 +1191,38 @@ footer .overlay-image {
 }
 .btn {
   border-color: #114a96;
-  background-color: #114a96;
+  background-color: #7e30e1;
   transition: 0.3s all linear;
 }
 .btn:hover {
+  background: #451952;
+  /* letter-spacing: 2px; */
+}
+
+.box-btn {
+  border-color: #114a96;
+  background-color: #114a96;
+  transition: 0.3s all linear;
+}
+.box-btn:hover {
   background: #102f58;
   /* letter-spacing: 2px; */
 }
 
+.register-btn {
+  display: flex;
+  margin-top: 55%;
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-view-bg {
+    background-image: url("images/landing-mobile-bg.png");
+  }
+
+  .register-btn {
+    scale: 1;
+    margin-left: 30%;
+    margin-top: 120%;
+  }
+}
