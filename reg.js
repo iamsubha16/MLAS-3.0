@@ -23,15 +23,17 @@ function submitForm(e) {
   var emailid = getElementVal("emailid");
   //   var msgContent = getElementVal("msgContent");
   var phone = getElementVal("phone");
-  var age = getElementVal("age");
+  // var age = getElementVal("age");
   var Tshirt = getElementVal("Tshirt");
   var year = getElementVal("year");
+  var dept = getElementVal("dept");
   // var pin = getElementVal("pin");
   // var college = getElementVal("college");
-  var ieee = getElementVal("ieee");
-  var ieeecs = getElementVal("ieeecs");
+  var day = getElementVal("day");
+  var food = getElementVal("food");
+  // var ieeecs = getElementVal("ieeecs");
   var online = getElementVal("online");
-  var reg_no = getElementVal("reg_no");
+  // var reg_no = getElementVal("reg_no");
 
   saveMessages(
     first_name,
@@ -39,13 +41,15 @@ function submitForm(e) {
     last_name,
     emailid,
     phone,
-    age,
+    // age,
     Tshirt,
     year,
-    ieee,
-    ieeecs,
+    dept,
+    day,
+    food,
+    // ieeecs,
     online,
-    reg_no
+    // reg_no
   );
   // document.querySelector(".alert").style.display = "block";
 
@@ -64,13 +68,15 @@ const saveMessages = (
   last_name,
   emailid,
   phone,
-  age,
+  // age,
   Tshirt,
   year,
-  ieee,
-  ieeecs,
+  dept,
+  day,
+  food,
+  // ieeecs,
   online,
-  reg_no
+  // reg_no
 ) => {
   var newContactForm = contactFormDB.push();
 
@@ -80,13 +86,15 @@ const saveMessages = (
     last_name: last_name,
     emailid: emailid,
     phone: phone,
-    age: age,
+    // age: age,
     Tshirt: Tshirt,
     year: year,
-    ieee: ieee,
-    ieeecs: ieeecs,
+    dept: dept,
+    day: day,
+    food: food,
+    // ieeecs: ieeecs,
     online: online,
-    reg_no: reg_no,
+    // reg_no: reg_no,
   });
 };
 
