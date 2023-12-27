@@ -1,12 +1,12 @@
-// const firebaseConfig = {
-//   apiKey: "AIzaSyAv_WIc9KUZEUrYU2Egmpbql4Hli7G8J_o",
-//   authDomain: "aicssyc-22.firebaseapp.com",
-//   databaseURL: "https://aicssyc-22-default-rtdb.firebaseio.com",
-//   projectId: "aicssyc-22",
-//   storageBucket: "aicssyc-22.appspot.com",
-//   messagingSenderId: "371299220040",
-//   appId: "1:371299220040:web:67d089b37c3d3e998d367d"
-// };
+const firebaseConfig = {
+  apiKey: "AIzaSyCYRRcEvLeRFGGlpYypL_Ry08szBbCyc8k",
+  authDomain: "mlas3dot0.firebaseapp.com",
+  databaseURL: "https://mlas3dot0-default-rtdb.firebaseio.com",
+  projectId: "mlas3dot0",
+  storageBucket: "mlas3dot0.appspot.com",
+  messagingSenderId: "822080675310",
+  appId: "1:822080675310:web:d5f7b69bce8c175a0342ff"
+};
 
 firebase.initializeApp(firebaseConfig);
 
@@ -24,10 +24,10 @@ function submitForm(e) {
   //   var msgContent = getElementVal("msgContent");
   var phone = getElementVal("phone");
   var age = getElementVal("age");
-  var gender = getElementVal("gender");
-  var address = getElementVal("address");
-  var pin = getElementVal("pin");
-  var college = getElementVal("college");
+  var Tshirt = getElementVal("Tshirt");
+  var year = getElementVal("year");
+  // var pin = getElementVal("pin");
+  // var college = getElementVal("college");
   var ieee = getElementVal("ieee");
   var ieeecs = getElementVal("ieeecs");
   var online = getElementVal("online");
@@ -40,10 +40,8 @@ function submitForm(e) {
     emailid,
     phone,
     age,
-    gender,
-    address,
-    pin,
-    college,
+    Tshirt,
+    year,
     ieee,
     ieeecs,
     online,
@@ -67,10 +65,8 @@ const saveMessages = (
   emailid,
   phone,
   age,
-  gender,
-  address,
-  pin,
-  college,
+  Tshirt,
+  year,
   ieee,
   ieeecs,
   online,
@@ -85,10 +81,8 @@ const saveMessages = (
     emailid: emailid,
     phone: phone,
     age: age,
-    gender: gender,
-    address: address,
-    pin: pin,
-    college: college,
+    Tshirt: Tshirt,
+    year: year,
     ieee: ieee,
     ieeecs: ieeecs,
     online: online,
@@ -97,5 +91,7 @@ const saveMessages = (
 };
 
 const getElementVal = (id) => {
+  // console.log(id)
+  console.log(document.getElementById(id).value)
   return document.getElementById(id).value;
 };
